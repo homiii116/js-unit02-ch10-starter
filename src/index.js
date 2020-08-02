@@ -1,6 +1,7 @@
 import MailValidator from './lib/MailValidator';
 import PasswordValidator from './lib/PasswordValidator';
 import 'whatwg-fetch'
+import 'eslint'
 
 const endpoint = "http://localhost:3000"
 

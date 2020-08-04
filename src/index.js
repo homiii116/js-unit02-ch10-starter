@@ -3,7 +3,7 @@ import PasswordValidator from './lib/PasswordValidator';
 import 'whatwg-fetch'
 import 'eslint'
 
-const endpoint = "http://localhost:3000"
+const endpoint = 'http://localhost:3000'
 
 const validate = (email, password) => {
   const mailValidator = new MailValidator(email);
@@ -70,12 +70,12 @@ const onSubmit = async () => {
       alert(err.message);
     });
   } else if (results[0].success) {
-    addErrorMessage("password", results[1].message);
+    addErrorMessage('password', results[1].message);
   } else if (results[1].success) {
-    addErrorMessage("email", results[0].message);
+    addErrorMessage('email', results[0].message);
   } else {
-    addErrorMessage("password", results[1].message);
-    addErrorMessage("email", results[0].message);
+    addErrorMessage('password', results[1].message);
+    addErrorMessage('email', results[0].message);
   }
 }
 
